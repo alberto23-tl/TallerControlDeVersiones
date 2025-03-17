@@ -26,6 +26,9 @@ class CalculatorControllerTest {
                .andExpect(view().name("calculator")); // ❌ Fallará porque en  devuelve una cadena en lugar de la vista
     }
 
+
+
+
     @Test
     void testCalcular() throws Exception {
         mockMvc.perform(get("/resultado?num1=5&num2=3"))
